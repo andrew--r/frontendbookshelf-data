@@ -1,0 +1,19 @@
+{
+  "name": "frontendbookshelf-data",
+  "version": "1.0.0",
+  "description": "Books data for frontend bookshelf",
+  "main": "data/books.json",
+  "repository": "https://github.com/andrew--r/frontendbookshelf-data",
+  "author": "Andrew Romanov <me@andrew-r.ru>",
+  "license": "MIT",
+  "scripts": {
+    "generator": "babel-node $(yarn bin)/plop"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "plop": "^1.7.4"
+  }
+}
