@@ -8,13 +8,21 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "generator": "babel-node $(yarn bin)/plop"
+    "lint": "eslint plop/**/*.js",
+    "generator": "babel-node $(yarn bin)/plop",
+    "precommit": "yarn lint && yarn test"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.22.0",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "husky": "^0.13.1",
     "jest": "^19.0.2",
     "plop": "^1.7.4"
   }

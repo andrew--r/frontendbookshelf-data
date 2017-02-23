@@ -1,14 +1,22 @@
 import {
 	deleteTagFromTagsData,
-	deleteTagFromBooksData
+	deleteTagFromBooksData,
 } from './delete-tag';
 
 const sampleTagsData = {
 	ids: ['1', '2', '3'],
 	dictionary: {
-		'1': 'qwe',
-		'2': 'asd',
-		'3': 'zxc',
+		1: 'qwe',
+		2: 'asd',
+		3: 'zxc',
+	},
+};
+
+const sampleTagsDataWithoutTag1 = {
+	ids: ['2', '3'],
+	dictionary: {
+		2: 'asd',
+		3: 'zxc',
 	},
 };
 
@@ -54,7 +62,6 @@ const sampleBooksDataWithoutTag2 = {
 	],
 };
 
-
 describe('deleteTagFromTagsData', () => {
 	test('should not modify tags data if tag does not exist', () => {
 		const emptyData = {
@@ -67,21 +74,7 @@ describe('deleteTagFromTagsData', () => {
 	});
 
 	test('should delete existing tag from tags data', () => {
-		const data = {
-			ids: ['0', '1'],
-			dictionary: {
-				'0': 'qwe',
-				'1': 'asd',
-			},
-		};
-		const expectedResult = {
-			ids: ['1'],
-			dictionary: {
-				'1': 'asd',
-			},
-		};
-
-		expect(deleteTagFromTagsData('0', data)).toEqual(expectedResult);
+		expect(deleteTagFromTagsData('1', sampleTagsData)).toEqual(sampleTagsDataWithoutTag1);
 	});
 });
 

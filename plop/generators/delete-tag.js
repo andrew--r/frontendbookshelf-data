@@ -2,19 +2,6 @@ import { PATHS } from '../config';
 import isTag from '../validators/is-tag';
 import transformJSONFile from '../transform-json-file';
 
-export default {
-	prompts: [{
-		type: 'input',
-		name: 'id',
-		message: 'ID тега:',
-		validate: isTag,
-	}],
-	actions: [
-		({ id }) => transformJSONFile(PATHS.files.tags, deleteTagFromTagsData.bind(null, id)),
-		({ id }) => transformJSONFile(PATHS.files.books, deleteTagFromBooksData.bind(null, id)),
-	],
-};
-
 export function deleteTagFromTagsData(tagId, tagsData) {
 	const { ids, dictionary } = tagsData;
 
@@ -37,6 +24,19 @@ export function deleteTagFromBooksData(tagId, booksData) {
 		list: list.map((book) => ({
 			...book,
 			tags: book.tags.filter((id) => id !== tagId),
-		}))
+		})),
 	};
 }
+
+export default {
+	prompts: [{
+		type: 'input',
+		name: 'id',
+		message: 'ID тега:',
+		validate: isTag,
+	}],
+	actions: [
+		({ id }) => transformJSONFile(PATHS.files.tags, deleteTagFromTagsData.bind(null, id)),
+		({ id }) => transformJSONFile(PATHS.files.books, deleteTagFromBooksData.bind(null, id)),
+	],
+};
