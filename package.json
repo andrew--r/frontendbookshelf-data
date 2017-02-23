@@ -7,6 +7,7 @@
   "author": "Andrew Romanov <me@andrew-r.ru>",
   "license": "MIT",
   "scripts": {
+    "test": "jest",
     "generator": "babel-node $(yarn bin)/plop"
   },
   "devDependencies": {
@@ -14,6 +15,7 @@
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.22.0",
+    "jest": "^19.0.2",
     "plop": "^1.7.4"
   }
 }
