@@ -1,4 +1,4 @@
-import { createTag } from './create-tag';
+import { addTag } from './create-tag';
 
 describe('create-tag', () => {
 	test('should add new tag to empty tags data', () => {
@@ -13,7 +13,7 @@ describe('create-tag', () => {
 			},
 		};
 
-		expect(createTag('qwe', data)).toEqual(expectedResult);
+		expect(addTag('qwe', data)).toEqual(expectedResult);
 	});
 
 	test('should add new tag to tag data with existing tags', () => {
@@ -32,6 +32,6 @@ describe('create-tag', () => {
 			},
 		};
 
-		expect(createTag('zxc', data)).toEqual(expectedResult);
+		expect(addTag('zxc', data)).toEqual(expectedResult);
 	});
 });

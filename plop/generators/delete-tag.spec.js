@@ -1,6 +1,6 @@
 import {
-	deleteTagFromTagsData,
-	deleteTagFromBooksData,
+	removeTagFromTagsData,
+	removeTagFromBooksData,
 } from './delete-tag';
 
 const sampleTagsData = {
@@ -62,34 +62,34 @@ const sampleBooksDataWithoutTag2 = {
 	],
 };
 
-describe('deleteTagFromTagsData', () => {
+describe('removeTagFromTagsData', () => {
 	test('should not modify tags data if tag does not exist', () => {
 		const emptyData = {
 			ids: [],
 			dictionary: {},
 		};
 
-		expect(deleteTagFromTagsData('1', emptyData)).toEqual(emptyData);
-		expect(deleteTagFromTagsData('5', sampleTagsData)).toEqual(sampleTagsData);
+		expect(removeTagFromTagsData('1', emptyData)).toEqual(emptyData);
+		expect(removeTagFromTagsData('5', sampleTagsData)).toEqual(sampleTagsData);
 	});
 
 	test('should delete existing tag from tags data', () => {
-		expect(deleteTagFromTagsData('1', sampleTagsData)).toEqual(sampleTagsDataWithoutTag1);
+		expect(removeTagFromTagsData('1', sampleTagsData)).toEqual(sampleTagsDataWithoutTag1);
 	});
 });
 
-describe('deleteTagFromBooksData', () => {
+describe('removeTagFromBooksData', () => {
 	test('should no modify books data if tag does not exist', () => {
 		const emptyBooksData = {
 			list: [],
 		};
 
-		expect(deleteTagFromBooksData('1', emptyBooksData)).toEqual(emptyBooksData);
-		expect(deleteTagFromBooksData('1234', sampleBooksData)).toEqual(sampleBooksData);
+		expect(removeTagFromBooksData('1', emptyBooksData)).toEqual(emptyBooksData);
+		expect(removeTagFromBooksData('1234', sampleBooksData)).toEqual(sampleBooksData);
 	});
 
 	test('shoud delete existing tag from books data', () => {
-		expect(deleteTagFromBooksData('1', sampleBooksData)).toEqual(sampleBooksDataWithoutTag1);
-		expect(deleteTagFromBooksData('2', sampleBooksData)).toEqual(sampleBooksDataWithoutTag2);
+		expect(removeTagFromBooksData('1', sampleBooksData)).toEqual(sampleBooksDataWithoutTag1);
+		expect(removeTagFromBooksData('2', sampleBooksData)).toEqual(sampleBooksDataWithoutTag2);
 	});
 });

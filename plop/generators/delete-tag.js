@@ -1,8 +1,10 @@
 import { PATHS } from '../config';
-import isTag from '../validators/is-tag';
+import combineValidators from '../validators/combine-validators';
+import isRequired from '../validators/is-required';
+import isNumeric from '../validators/is-numeric';
 import transformJSONFile from '../transform-json-file';
 
-export function deleteTagFromTagsData(tagId, tagsData) {
+export function removeTagFromTagsData(tagId, tagsData) {
 	const { ids, dictionary } = tagsData;
 
 	return {
@@ -17,7 +19,7 @@ export function deleteTagFromTagsData(tagId, tagsData) {
 	};
 }
 
-export function deleteTagFromBooksData(tagId, booksData) {
+export function removeTagFromBooksData(tagId, booksData) {
 	const { list } = booksData;
 
 	return {
@@ -33,10 +35,10 @@ export default {
 		type: 'input',
 		name: 'id',
 		message: 'ID тега:',
-		validate: isTag,
+		validate: combineValidators(isRequired, isNumeric),
 	}],
 	actions: [
-		({ id }) => transformJSONFile(PATHS.files.tags, deleteTagFromTagsData.bind(null, id)),
-		({ id }) => transformJSONFile(PATHS.files.books, deleteTagFromBooksData.bind(null, id)),
+		({ id }) => transformJSONFile(PATHS.files.tags, removeTagFromTagsData.bind(null, id)),
+		({ id }) => transformJSONFile(PATHS.files.books, removeTagFromBooksData.bind(null, id)),
 	],
 };
