@@ -1,6 +1,6 @@
-import { addTag } from './create-tag';
+import addTag from './add-tag';
 
-describe('create-tag', () => {
+describe('add-tag', () => {
 	test('should add new tag to empty tags data', () => {
 		const data = {
 			ids: [],
