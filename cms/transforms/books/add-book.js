@@ -1,16 +1,29 @@
 export default function addBook(options, booksData) {
+	const {
+		title,
+		authors,
+		url,
+		coverUrl,
+		tags,
+		fetchAndSaveCover,
+	} = options;
 	const { list } = booksData;
-	const lastBookId = list.length - 1;
-	const newBookId = String(lastBookId + 1);
+	const id = String(list.length);
+	const coverExtension = coverUrl.split('.').pop();
+	const coverFilename = `${id}.${coverExtension}`;
+
+	if (typeof fetchAndSaveCover === 'function') {
+		fetchAndSaveCover(options.coverUrl, coverFilename);
+	}
 
 	return {
 		list: [...list, {
-			id: newBookId,
-			title: options.title,
-			authors: options.authors,
-			url: options.url,
-			thumbnail: options.thumbnail,
-			tags: options.tags,
+			id,
+			title,
+			authors,
+			url,
+			tags,
+			coverFilename,
 		}],
 	};
 }

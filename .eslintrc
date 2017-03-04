@@ -17,7 +17,10 @@
     "arrow-body-style": ["warn", "as-needed"],
     "arrow-parens": ["error", "always"],
     "import/no-extraneous-dependencies": ["error", {
-      "devDependencies": ["**/gulp/**/*.js"]
+      "devDependencies": [
+        "**/gulp/**/*.js",
+        "**/cms/**/*.js"
+      ]
     }],
     "valid-jsdoc": ["error", {
       "requireParamDescription": false,
