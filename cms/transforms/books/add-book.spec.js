@@ -9,10 +9,12 @@ const options = {
 };
 
 const emptySampleData = {
+	lastBookId: -1,
 	list: [],
 };
 
 const sampleData = {
+	lastBookId: 0,
 	list: [
 		{
 			id: '0',

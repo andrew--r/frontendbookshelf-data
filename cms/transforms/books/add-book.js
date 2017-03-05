@@ -7,8 +7,8 @@ export default function addBook(options, booksData) {
 		tags,
 		fetchAndSaveCover,
 	} = options;
-	const { list } = booksData;
-	const id = String(list.length);
+	const { lastBookId, list } = booksData;
+	const id = lastBookId + 1;
 	const coverExtension = coverUrl.split('.').pop();
 	const coverFilename = `${id}.${coverExtension}`;
 
@@ -17,8 +17,9 @@ export default function addBook(options, booksData) {
 	}
 
 	return {
+		lastBookId: id,
 		list: [...list, {
-			id,
+			id: String(id),
 			title,
 			authors,
 			url,
