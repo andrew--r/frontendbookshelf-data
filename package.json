@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "lint": "eslint cms/**/*.js",
+    "lint": "eslint cms/",
     "generator": "babel-node $(yarn bin)/plop",
     "precommit": "yarn lint && yarn test"
   },

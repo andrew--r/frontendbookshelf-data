@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import request from 'request';
 
-import { PATHS } from '../config';
+import PATHS from '../paths';
 
 import readFile from '../fs/read-file';
 import writeFile from '../fs/write-file';

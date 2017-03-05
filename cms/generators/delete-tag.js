@@ -1,4 +1,4 @@
-import { PATHS } from '../config';
+import PATHS from '../paths';
 import combineValidators from '../validators/combine-validators';
 import isRequired from '../validators/is-required';
 import isNumeric from '../validators/is-numeric';

@@ -1,4 +1,4 @@
-import { PATHS } from '../config';
+import PATHS from '../paths';
 import isRequired from '../validators/is-required';
 import addTag from '../transforms/tags/add-tag';
 import transformJSONFile from '../helpers/transform-json-file';

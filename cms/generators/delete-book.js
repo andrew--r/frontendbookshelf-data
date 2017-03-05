@@ -1,4 +1,4 @@
-import { PATHS } from '../config';
+import PATHS from '../paths';
 import readFile from '../fs/read-file';
 import unlink from '../fs/unlink';
 
