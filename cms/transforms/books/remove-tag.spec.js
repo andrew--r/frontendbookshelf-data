@@ -43,7 +43,7 @@ const sampleBooksDataWithoutTag2 = {
 };
 
 describe('remove-tag', () => {
-	test('should no modify books data if tag does not exist', () => {
+	test('should not modify books data if tag does not exist', () => {
 		const emptyBooksData = {
 			list: [],
 		};
