@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 /**
- * delete a name and possibly the file it refers to
+ * Wrapper around fs.unlink()
  *
  * @param  {String} path
  * @return {Promise}
