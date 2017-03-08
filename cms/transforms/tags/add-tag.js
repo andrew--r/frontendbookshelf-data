@@ -3,6 +3,7 @@ export default function addTag(tagName, tagsData) {
 	const tagId = lastTagId + 1;
 
 	return {
+		...tagsData,
 		lastTagId: tagId,
 		ids: [...ids, String(tagId)],
 		dictionary: {

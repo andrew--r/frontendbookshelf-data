@@ -1,10 +1,10 @@
 import fs from 'fs';
 
-import combineValidators from '../validators/combine-validators';
-import isRequired from '../validators/is-required';
-import isUrl from '../validators/is-url';
+import combineValidators from '../../validators/combine-validators';
+import isRequired from '../../validators/is-required';
+import isUrl from '../../validators/is-url';
 
-import PATHS from '../paths';
+import PATHS from '../../paths';
 
 let tagsData = {
 	ids: [],

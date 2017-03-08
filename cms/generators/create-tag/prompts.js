@@ -1,4 +1,4 @@
-import isRequired from '../validators/is-required';
+import isRequired from '../../validators/is-required';
 
 export default [{
 	type: 'input',
