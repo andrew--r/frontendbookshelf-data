@@ -1,5 +1,5 @@
 {
-  "lastBookId": 3,
+  "lastBookId": 4,
   "list": [
     {
       "id": "0",
@@ -62,6 +62,22 @@
         "5"
       ],
       "coverFilename": "3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "HTML5 Canvas",
+      "authors": [
+        "Стив Фултон",
+        "Джефф Фултон"
+      ],
+      "url": "http://shop.oreilly.com/product/0636920026266.do",
+      "tags": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ],
+      "coverFilename": "4.jpg"
     }
   ]
 }
