@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 import request from 'request';
 
 import PATHS from '../../paths';
@@ -10,7 +9,7 @@ import writeFile from '../../fs/write-file';
 import addBook from '../../transforms/books/add-book';
 
 function fetchAndSaveCover(coverUrl, filename) {
-	request(coverUrl).pipe(fs.createWriteStream(path.resolve(__dirname, `../../data/covers/${filename}`)));
+	request(coverUrl).pipe(fs.createWriteStream(`${PATHS.folders.covers}/${filename}`));
 }
 
 export default [
