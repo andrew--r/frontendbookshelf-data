@@ -17,7 +17,7 @@ export default [
 		.then(([tags]) => {
 			const isMultiple = tags.length > 1;
 
-			return `Тег${isMultiple ? 'и' : ''} ${tagsString} добавлен${isMultiple ? 'ы' : ''}`;
+			return `Тег${isMultiple ? 'и' : ''} «${tagsString}» добавлен${isMultiple ? 'ы' : ''}`;
 		})
 		.catch(console.log),
 ];
