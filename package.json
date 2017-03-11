@@ -1,11 +1,14 @@
 {
   "name": "frontendbookshelf-data",
-  "version": "1.0.0",
-  "description": "Books data for frontend bookshelf",
+  "version": "0.0.1",
+  "description": "Data for frontendbookshelf",
   "main": "data/books.json",
   "repository": "https://github.com/andrew--r/frontendbookshelf-data",
   "author": "Andrew Romanov <me@andrew-r.ru>",
   "license": "MIT",
+  "files": [
+    "data"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "eslint cms/",
