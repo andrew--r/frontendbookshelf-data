@@ -13,7 +13,7 @@ export default function transformJSONFile(path, transformFn) {
 	return readFile(path)
 		.then(JSON.parse)
 		.then(transformFn)
-		.then(JSON.stringify)
+		.then((data) => JSON.stringify(data, null, 2))
 		.then((stringifiedJSON) => writeFile(path, stringifiedJSON))
 		.catch((error) => {
 			console.log('Error occurred while parsing file contents', path, error);

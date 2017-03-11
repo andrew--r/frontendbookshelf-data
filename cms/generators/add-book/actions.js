@@ -23,7 +23,7 @@ export default [
 			coverUrl: options.coverUrl,
 			tags: options.tags,
 		}, booksData))
-		.then(JSON.stringify)
+		.then((data) => JSON.stringify(data, null, 2))
 		.then(writeFile.bind(null, PATHS.files.books))
 		.then(() => 'Книга добавлена')
 		.catch(console.error),
