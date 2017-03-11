@@ -1,4 +1,21 @@
 {
-  "lastBookId": -1,
-  "list": []
+  "lastBookId": 0,
+  "list": [
+    {
+      "id": "0",
+      "title": "Изучаем HTML5",
+      "authors": [
+        "Брюс Лоусон",
+        "Реми Шарп"
+      ],
+      "url": "https://www.ozon.ru/context/detail/id/28297184/",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "5"
+      ],
+      "coverFilename": "0.png"
+    }
+  ]
 }
