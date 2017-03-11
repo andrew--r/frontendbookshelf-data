@@ -1,5 +1,5 @@
 {
-  "lastBookId": 0,
+  "lastBookId": 1,
   "list": [
     {
       "id": "0",
@@ -16,6 +16,21 @@
         "5"
       ],
       "coverFilename": "0.png"
+    },
+    {
+      "id": "1",
+      "title": "HTML5: Up and Running",
+      "authors": [
+        "Марк Пилгрим"
+      ],
+      "url": "http://shop.oreilly.com/product/9780596806033.do",
+      "tags": [
+        "0",
+        "1",
+        "4",
+        "5"
+      ],
+      "coverFilename": "1.jpg"
     }
   ]
 }
