@@ -1,5 +1,5 @@
 {
-  "lastBookId": 1,
+  "lastBookId": 2,
   "list": [
     {
       "id": "0",
@@ -31,6 +31,22 @@
         "5"
       ],
       "coverFilename": "1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "HTML5. Рецепты программирования",
+      "authors": [
+        "Кристофер Шмитт",
+        "Кайл Симпсон"
+      ],
+      "url": "https://www.piter.com/product_by_id/21920827",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "5"
+      ],
+      "coverFilename": "2.png"
     }
   ]
 }
