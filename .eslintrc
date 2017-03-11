@@ -16,17 +16,17 @@
     "newline-after-var": ["error", "always"],
     "arrow-body-style": ["warn", "as-needed"],
     "arrow-parens": ["error", "always"],
-    "import/no-extraneous-dependencies": ["error", {
-      "devDependencies": [
-        "**/gulp/**/*.js",
-        "**/cms/**/*.js"
-      ]
-    }],
     "valid-jsdoc": ["error", {
       "requireParamDescription": false,
       "requireReturnDescription": false
     }],
     "no-param-reassign": ["warn"],
-    "import/no-named-as-default": ["warn"]
+    "import/no-named-as-default": ["warn"],
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": [
+        "**/gulp/**/*.js",
+        "**/cms/**/*.js"
+      ]
+    }]
   }
 }
