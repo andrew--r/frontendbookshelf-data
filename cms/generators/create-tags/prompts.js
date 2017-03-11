@@ -2,7 +2,7 @@ import isRequired from '../../validators/is-required';
 
 export default [{
 	type: 'input',
-	name: 'name',
-	message: 'Название тега:',
+	name: 'tagsString',
+	message: 'Названия тегов (через запятую):',
 	validate: isRequired,
 }];
