@@ -1,5 +1,5 @@
 {
-  "lastBookId": 4,
+  "lastBookId": 5,
   "list": [
     {
       "id": "0",
@@ -78,6 +78,22 @@
         "5"
       ],
       "coverFilename": "4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Functional JavaScript",
+      "authors": [
+        "Майкл Фогус"
+      ],
+      "url": "http://shop.oreilly.com/product/0636920028857.do",
+      "tags": [
+        "1",
+        "2",
+        "7",
+        "9",
+        "10"
+      ],
+      "coverFilename": "5.png"
     }
   ]
 }
