@@ -1,5 +1,5 @@
 {
-  "lastBookId": 6,
+  "lastBookId": 7,
   "list": [
     {
       "id": "0",
@@ -110,6 +110,21 @@
         "10"
       ],
       "coverFilename": "6.jpeg"
+    },
+    {
+      "id": "7",
+      "title": "JavaScript. Сильные стороны",
+      "authors": [
+        "Дуглас Крокфорд"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/20217226/",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "7"
+      ],
+      "coverFilename": "7.png"
     }
   ]
 }
