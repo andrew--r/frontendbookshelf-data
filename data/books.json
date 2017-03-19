@@ -1,5 +1,5 @@
 {
-  "lastBookId": 7,
+  "lastBookId": 8,
   "list": [
     {
       "id": "0",
@@ -125,6 +125,22 @@
         "7"
       ],
       "coverFilename": "7.png"
+    },
+    {
+      "id": "8",
+      "title": "Секреты JavaScript ниндзя",
+      "authors": [
+        "Джон Резиг",
+        "Беэр Бибо"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/22421421/",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "7"
+      ],
+      "coverFilename": "8.jpg"
     }
   ]
 }
