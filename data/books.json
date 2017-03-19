@@ -1,5 +1,5 @@
 {
-  "lastBookId": 5,
+  "lastBookId": 6,
   "list": [
     {
       "id": "0",
@@ -94,6 +94,22 @@
         "10"
       ],
       "coverFilename": "5.png"
+    },
+    {
+      "id": "6",
+      "title": "JavaScript Allongé",
+      "authors": [
+        "Рег Брейтуэйт"
+      ],
+      "url": "https://leanpub.com/javascriptallongesix",
+      "tags": [
+        "2",
+        "4",
+        "7",
+        "9",
+        "10"
+      ],
+      "coverFilename": "6.jpeg"
     }
   ]
 }
