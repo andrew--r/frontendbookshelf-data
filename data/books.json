@@ -1,5 +1,5 @@
 {
-  "lastBookId": 8,
+  "lastBookId": 9,
   "list": [
     {
       "id": "0",
@@ -141,6 +141,21 @@
         "7"
       ],
       "coverFilename": "8.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Сила JavaScript. 68 способов эффективного использования JS",
+      "authors": [
+        "Дэвид Херман"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/20413530/",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "7"
+      ],
+      "coverFilename": "9.jpg"
     }
   ]
 }
