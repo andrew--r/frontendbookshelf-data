@@ -1,5 +1,5 @@
 {
-  "lastBookId": 14,
+  "lastBookId": 15,
   "list": [
     {
       "id": "0",
@@ -230,6 +230,20 @@
         "7"
       ],
       "coverFilename": "14.jpg"
+    },
+    {
+      "id": "15",
+      "title": "JavaScript. Шаблоны",
+      "authors": [
+        "Стоян Стефанов"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/6287517/",
+      "tags": [
+        "2",
+        "3",
+        "7"
+      ],
+      "coverFilename": "15.jpg"
     }
   ]
 }
