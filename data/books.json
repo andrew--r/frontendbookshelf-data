@@ -1,5 +1,5 @@
 {
-  "lastBookId": 12,
+  "lastBookId": 13,
   "list": [
     {
       "id": "0",
@@ -200,6 +200,20 @@
         "12"
       ],
       "coverFilename": "12.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Even Faster Web Sites",
+      "authors": [
+        "Стив Саудерс"
+      ],
+      "url": "http://shop.oreilly.com/product/9780596522315.do",
+      "tags": [
+        "2",
+        "4",
+        "12"
+      ],
+      "coverFilename": "13.jpg"
     }
   ]
 }
