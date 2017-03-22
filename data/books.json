@@ -1,5 +1,5 @@
 {
-  "lastBookId": 10,
+  "lastBookId": 11,
   "list": [
     {
       "id": "0",
@@ -171,6 +171,21 @@
         "11"
       ],
       "coverFilename": "10.jpg"
+    },
+    {
+      "id": "11",
+      "title": "JavaScript. Оптимизация производительности",
+      "authors": [
+        "Николас Закас"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/18421547/",
+      "tags": [
+        "2",
+        "3",
+        "7",
+        "12"
+      ],
+      "coverFilename": "11.jpg"
     }
   ]
 }
