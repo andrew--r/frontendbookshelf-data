@@ -1,5 +1,5 @@
 {
-  "lastBookId": 9,
+  "lastBookId": 10,
   "list": [
     {
       "id": "0",
@@ -156,6 +156,21 @@
         "7"
       ],
       "coverFilename": "9.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Working with Static Sites",
+      "authors": [
+        "Реймонд Кэмден",
+        "Брайан Ринальди"
+      ],
+      "url": "http://shop.oreilly.com/product/0636920051879.do",
+      "tags": [
+        "2",
+        "4",
+        "11"
+      ],
+      "coverFilename": "10.jpg"
     }
   ]
 }
