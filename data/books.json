@@ -1,5 +1,5 @@
 {
-  "lastBookId": 13,
+  "lastBookId": 14,
   "list": [
     {
       "id": "0",
@@ -214,6 +214,22 @@
         "12"
       ],
       "coverFilename": "13.jpg"
+    },
+    {
+      "id": "14",
+      "title": "JavaScript. Подробное руководство",
+      "authors": [
+        "Дэвид Флэнаган"
+      ],
+      "url": "https://www.ozon.ru/context/detail/id/3881091/",
+      "tags": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "7"
+      ],
+      "coverFilename": "14.jpg"
     }
   ]
 }
