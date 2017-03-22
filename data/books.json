@@ -1,5 +1,5 @@
 {
-  "lastBookId": 15,
+  "lastBookId": 16,
   "list": [
     {
       "id": "0",
@@ -244,6 +244,21 @@
         "7"
       ],
       "coverFilename": "15.jpg"
+    },
+    {
+      "id": "16",
+      "title": "Выразительный JavaScript",
+      "authors": [
+        "Марейн Хавербек"
+      ],
+      "url": "https://www.gitbook.com/book/karmazzin/eloquentjavascript_ru",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "7"
+      ],
+      "coverFilename": "16.jpg"
     }
   ]
 }
