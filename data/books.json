@@ -1,5 +1,5 @@
 {
-  "lastBookId": 11,
+  "lastBookId": 12,
   "list": [
     {
       "id": "0",
@@ -186,6 +186,20 @@
         "12"
       ],
       "coverFilename": "11.jpg"
+    },
+    {
+      "id": "12",
+      "title": "High Performance Web Sites",
+      "authors": [
+        "Стив Саудерс"
+      ],
+      "url": "http://shop.oreilly.com/product/9780596529307.do",
+      "tags": [
+        "2",
+        "4",
+        "12"
+      ],
+      "coverFilename": "12.jpg"
     }
   ]
 }
