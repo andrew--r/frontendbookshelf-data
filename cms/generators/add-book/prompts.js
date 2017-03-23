@@ -4,7 +4,7 @@ import combineValidators from '../../validators/combine-validators';
 import isRequired from '../../validators/is-required';
 import isUrl from '../../validators/is-url';
 
-import PATHS from '../../paths';
+import PATHS from '../../PATHS';
 
 let tagsData = {
 	ids: [],

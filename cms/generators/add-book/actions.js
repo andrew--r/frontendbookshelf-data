@@ -1,7 +1,7 @@
 import fs from 'fs';
 import request from 'request';
 
-import PATHS from '../../paths';
+import PATHS from '../../PATHS';
 
 import readFile from '../../fs/read-file';
 import writeFile from '../../fs/write-file';
