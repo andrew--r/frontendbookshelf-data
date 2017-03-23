@@ -1,4 +1,4 @@
-import PATHS from '../../paths';
+import PATHS from '../../PATHS';
 
 import transformJSONFile from '../../helpers/transform-json-file';
 import removeTagFromTagsData from '../../transforms/tags/remove-tag';
