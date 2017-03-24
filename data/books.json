@@ -1,5 +1,5 @@
 {
-  "lastBookId": 16,
+  "lastBookId": 17,
   "list": [
     {
       "id": "0",
@@ -259,6 +259,20 @@
         "7"
       ],
       "coverFilename": "16.jpg"
+    },
+    {
+      "id": "17",
+      "title": "Learning JavaScript Design Patterns",
+      "authors": [
+        "Эдди Османи"
+      ],
+      "url": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/",
+      "tags": [
+        "2",
+        "4",
+        "7"
+      ],
+      "coverFilename": "17.jpg"
     }
   ]
 }
