@@ -4,6 +4,7 @@ import PATHS from './PATHS';
 import readFile from './fs/read-file';
 import writeFile from './fs/write-file';
 import pluralize from './helpers/pluralize';
+import prettyJSONStringify from './helpers/pretty-json-stringify';
 
 import addTagsToTagsData from './transforms/tags/add-tags';
 
@@ -12,12 +13,12 @@ program
 	.option('-n, --names [names]', 'tags names splitted by commas')
 	.parse(process.argv);
 
-if ((program.names || '').trim() === '') {
+const trim = (string) => string.trim();
+const tags = (program.names || '').split(',').map(trim).filter(Boolean);
+
+if (!tags.length) {
 	console.log('Option -n (--names) is required');
 } else {
-	const trim = (string) => string.trim();
-	const tags = program.names.split(',').map(trim);
-
 	readFile(PATHS.files.tags)
 		.then(JSON.parse)
 		.then((parsedData) => {
@@ -45,8 +46,8 @@ if ((program.names || '').trim() === '') {
 
 			return addTagsToTagsData(newTags, parsedData);
 		})
-		.then((updatedData) => JSON.stringify(updatedData, null, 2))
-		.then(writeFile.bind(null, PATHS.files.tags))
+		.then(prettyJSONStringify)
+		.then(writeFile(PATHS.files.tags))
 		.then(() => console.log('Done!'))
 		.catch(console.log);
 }

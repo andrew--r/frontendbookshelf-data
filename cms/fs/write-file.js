@@ -5,10 +5,14 @@ import fs from 'fs';
  *
  * @param {String} path
  * @param {String|Buffer} data
- * @return {Promise}
+ * @return {Function} function that takes data and writes it to the given file
  */
-export default function writeFile(path, data) {
-	return new Promise((resolve, reject) => {
+export default function writeFile(path) {
+	/**
+	 * @param  {String|Buffer} data
+	 * @return {Promise}
+	 */
+	return (data) => new Promise((resolve, reject) => {
 		fs.writeFile(path, data, (error) => {
 			if (error) {
 				reject(error);
