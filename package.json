@@ -13,7 +13,6 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint cms/",
-    "cms": "babel-node $(yarn bin)/plop",
     "precommit": "yarn lint && yarn test"
   },
   "devDependencies": {
@@ -30,7 +29,6 @@
     "husky": "^0.13.1",
     "inquirer": "^3.0.6",
     "jest": "^19.0.2",
-    "plop": "^1.7.4",
     "request": "^2.80.0"
   }
 }
