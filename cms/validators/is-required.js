@@ -6,7 +6,7 @@
  */
 export default function isRequired(value) {
 	if (!value || value.trim() === '') {
-		return 'обязательно для заполнения';
+		return 'should not be empty';
 	}
 
 	return true;

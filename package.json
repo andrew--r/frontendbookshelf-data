@@ -28,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "husky": "^0.13.1",
+    "inquirer": "^3.0.6",
     "jest": "^19.0.2",
     "plop": "^1.7.4",
     "request": "^2.80.0"

@@ -1,3 +1,3 @@
 # validators
 
-This directory contains user input validation functions.
+This directory contains `inquirer` validation functions.
