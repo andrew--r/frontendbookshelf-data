@@ -9,7 +9,7 @@ import addTagsToTagsData from './transforms/tags/add-tags';
 
 program
 	.version('1.0.0')
-	.option('-n, --names [names]', 'tags names splitted by comma')
+	.option('-n, --names [names]', 'tags names splitted by commas')
 	.parse(process.argv);
 
 if ((program.names || '').trim() === '') {
