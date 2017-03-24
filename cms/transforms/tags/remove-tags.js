@@ -1,11 +1,10 @@
-export default function removeTags(tagsNames, tagsData) {
-	const { dictionary } = tagsData;
-	const { filteredIds, filteredDictionary } = Object
-		.keys(dictionary)
-		.reduce((result, id) => {
+export default function removeTags(tagsIds) {
+	return (tagsData) => {
+		const { ids, dictionary } = tagsData;
+		const { filteredIds, filteredDictionary } = ids.reduce((result, id) => {
 			const name = dictionary[id];
 
-			if (!tagsNames.includes(name)) {
+			if (!tagsIds.includes(id)) {
 				result.filteredIds.push(id);
 				result.filteredDictionary[id] = name;
 			}
@@ -16,9 +15,10 @@ export default function removeTags(tagsNames, tagsData) {
 			filteredDictionary: {},
 		});
 
-	return {
-		...tagsData,
-		ids: filteredIds,
-		dictionary: filteredDictionary,
+		return {
+			...tagsData,
+			ids: filteredIds,
+			dictionary: filteredDictionary,
+		};
 	};
 }

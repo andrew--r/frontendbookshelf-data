@@ -16,12 +16,12 @@ describe('remove-tags', () => {
 			dictionary: {},
 		};
 
-		expect(removeTags(['qwerty'], emptyData)).toEqual(emptyData);
-		expect(removeTags(['hello world'], sampleTagsData)).toEqual(sampleTagsData);
+		expect(removeTags(['1234'])(emptyData)).toEqual(emptyData);
+		expect(removeTags(['5678'])(sampleTagsData)).toEqual(sampleTagsData);
 	});
 
 	test('should delete existing tag from tags data', () => {
-		expect(removeTags(['qwe'], sampleTagsData)).toEqual({
+		expect(removeTags(['1'])(sampleTagsData)).toEqual({
 			ids: ['2', '3'],
 			dictionary: {
 				2: 'asd',
@@ -29,7 +29,7 @@ describe('remove-tags', () => {
 			},
 		});
 
-		expect(removeTags(['qwe', 'zxc'], sampleTagsData)).toEqual({
+		expect(removeTags(['1', '3'])(sampleTagsData)).toEqual({
 			ids: ['2'],
 			dictionary: {
 				2: 'asd',
