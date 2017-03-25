@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs = require('fs');
 
 /**
  * Wrapper around fs.readFile()
@@ -6,7 +6,7 @@ import fs from 'fs';
  * @param {String} path
  * @return {Promise}
  */
-export default function readFile(path) {
+module.exports = function readFile(path) {
 	return new Promise((resolve, reject) => {
 		fs.readFile(path, (error, data) => {
 			if (error) {
@@ -16,4 +16,4 @@ export default function readFile(path) {
 			}
 		});
 	});
-}
+};

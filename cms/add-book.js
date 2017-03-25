@@ -1,18 +1,18 @@
-import program from 'commander';
-import inquirer from 'inquirer';
-import fs from 'fs';
-import request from 'request';
+const program = require('commander');
+const inquirer = require('inquirer');
+const fs = require('fs');
+const request = require('request');
 
-import PATHS from './PATHS';
-import readFile from './fs/read-file';
-import writeFile from './fs/write-file';
-import prettyJSONStringify from './helpers/pretty-json-stringify';
+const PATHS = require('./PATHS');
+const readFile = require('./fs/read-file');
+const writeFile = require('./fs/write-file');
+const prettyJSONStringify = require('./helpers/pretty-json-stringify');
 
-import combineValidators from './validators/combine-validators';
-import isRequired from './validators/is-required';
-import isUrl from './validators/is-url';
+const combineValidators = require('./validators/combine-validators');
+const isRequired = require('./validators/is-required');
+const isUrl = require('./validators/is-url');
 
-import addBookToBooksData from './transforms/books/add-book';
+const addBookToBooksData = require('./transforms/books/add-book');
 
 program
 	.version('1.0.0')

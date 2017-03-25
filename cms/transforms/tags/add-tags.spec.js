@@ -1,4 +1,4 @@
-import addTag from './add-tags';
+const addTag = require('./add-tags');
 
 describe('add-tag', () => {
 	test('should add new tags to empty tags data', () => {
@@ -31,11 +31,10 @@ describe('add-tag', () => {
 		const expectedResult = {
 			lastTagId: 3,
 			ids: [...data.ids, '2', '3'],
-			dictionary: {
-				...data.dictionary,
+			dictionary: Object.assign({}, data.dictionary, {
 				2: 'zxc',
 				3: 'qweasdzxc',
-			},
+			}),
 		};
 
 		expect(addTag(['zxc', 'qweasdzxc'], data)).toEqual(expectedResult);

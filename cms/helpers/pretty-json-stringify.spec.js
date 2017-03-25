@@ -1,4 +1,4 @@
-import prettyJSONStringify from './pretty-json-stringify';
+const prettyJSONStringify = require('./pretty-json-stringify');
 
 describe('prettyJSONStringify', () => {
 	test('should stringify data to JSON and format it with two space indentation', () => {

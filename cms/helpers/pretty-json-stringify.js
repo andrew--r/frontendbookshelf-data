@@ -4,6 +4,6 @@
  * @param {*} data
  * @return {String}
  */
-export default function prettyJSONStringify(data) {
+module.exports = function prettyJSONStringify(data) {
 	return JSON.stringify(data, null, 2);
-}
+};

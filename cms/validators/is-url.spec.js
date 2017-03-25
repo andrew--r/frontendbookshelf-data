@@ -1,4 +1,4 @@
-import isUrl from './is-url';
+const isUrl = require('./is-url');
 
 describe('is-url', () => {
 	test('should return error string if given value is not a valid url', () => {

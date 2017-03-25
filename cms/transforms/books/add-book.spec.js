@@ -1,4 +1,4 @@
-import addBook from './add-book';
+const addBook = require('./add-book');
 
 const options = {
 	title: 'Отзывчивый веб-дизайн',
@@ -38,13 +38,12 @@ describe('create-book', () => {
 		let coverUrl = '';
 		let coverFilename = '';
 
-		addBook({
-			...options,
+		addBook(Object.assign({}, options, {
 			fetchAndSaveCover: (url, filename) => {
 				coverUrl = url;
 				coverFilename = filename;
 			},
-		}, emptySampleData);
+		}), emptySampleData);
 
 		expect(coverUrl).toBe('http://some.server.com/0.jpg');
 		expect(coverFilename).toBe('0.jpg');

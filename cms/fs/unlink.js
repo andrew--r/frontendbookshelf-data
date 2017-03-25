@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs = require('fs');
 
 /**
  * Wrapper around fs.unlink()
@@ -6,7 +6,7 @@ import fs from 'fs';
  * @param  {String} path
  * @return {Promise}
  */
-export default function unlink(path) {
+module.exports = function unlink(path) {
 	return new Promise((resolve, reject) => {
 		fs.unlink(path, (error) => {
 			if (error) {
@@ -16,4 +16,4 @@ export default function unlink(path) {
 			}
 		});
 	});
-}
+};

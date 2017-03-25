@@ -1,12 +1,12 @@
-import program from 'commander';
+const program = require('commander');
 
-import PATHS from './PATHS';
-import readFile from './fs/read-file';
-import writeFile from './fs/write-file';
-import prettyJSONStringify from './helpers/pretty-json-stringify';
+const PATHS = require('./PATHS');
+const readFile = require('./fs/read-file');
+const writeFile = require('./fs/write-file');
+const prettyJSONStringify = require('./helpers/pretty-json-stringify');
 
-import removeTagsFromTagsData from './transforms/tags/remove-tags';
-import removeTagsFromBooksData from './transforms/books/remove-tags';
+const removeTagsFromTagsData = require('./transforms/tags/remove-tags');
+const removeTagsFromBooksData = require('./transforms/books/remove-tags');
 
 program
 	.version('1.0.0')
