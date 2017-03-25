@@ -1,5 +1,5 @@
 {
-  "lastBookId": 17,
+  "lastBookId": 18,
   "list": [
     {
       "id": "0",
@@ -273,6 +273,21 @@
         "7"
       ],
       "coverFilename": "17.jpg"
+    },
+    {
+      "id": "18",
+      "title": "Speaking JavaScript",
+      "authors": [
+        "Аксель Раушмайер"
+      ],
+      "url": "http://speakingjs.com/",
+      "tags": [
+        "0",
+        "1",
+        "4",
+        "7"
+      ],
+      "coverFilename": "18.jpg"
     }
   ]
 }
