@@ -1,6 +1,6 @@
 const program = require('commander');
 
-const PATHS = require('./PATHS');
+const PATHS = require('./paths');
 const readFile = require('./fs/read-file');
 const writeFile = require('./fs/write-file');
 const unlink = require('./fs/unlink');

@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const request = require('request');
 
-const PATHS = require('./PATHS');
+const PATHS = require('./paths');
 const readFile = require('./fs/read-file');
 const writeFile = require('./fs/write-file');
 const prettyJSONStringify = require('./helpers/pretty-json-stringify');
