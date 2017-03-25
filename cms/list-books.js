@@ -1,7 +1,7 @@
-import program from 'commander';
+const program = require('commander');
 
-import PATHS from './PATHS';
-import readFile from './fs/read-file';
+const PATHS = require('./PATHS');
+const readFile = require('./fs/read-file');
 
 program
 	.version('1.0.0')

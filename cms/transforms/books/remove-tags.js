@@ -1,13 +1,11 @@
-export default function removeTagFromBooksData(tagsIds) {
+module.exports = function removeTagFromBooksData(tagsIds) {
 	return (booksData) => {
 		const { list } = booksData;
 
-		return {
-			...booksData,
-			list: list.map((book) => ({
-				...book,
+		return Object.assign({}, booksData, {
+			list: list.map((book) => Object.assign({}, book, {
 				tags: book.tags.filter((id) => !tagsIds.includes(id)),
 			})),
-		};
+		});
 	};
-}
+};

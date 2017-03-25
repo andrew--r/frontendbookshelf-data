@@ -6,6 +6,6 @@ const URL_REGEXP = /^(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]
  * @param {String} value
  * @return {Boolean|String} string represents an error
  */
-export default function isUrl(value) {
+module.exports = function isUrl(value) {
 	return URL_REGEXP.test(value) || 'invalid url';
-}
+};

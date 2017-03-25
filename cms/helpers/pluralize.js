@@ -8,6 +8,6 @@
  * @param {Number} count
  * @return {String}
  */
-export default function pluralize(variants, count) {
+module.exports = function pluralize(variants, count) {
 	return variants[count === 1 ? 0 : 1];
-}
+};

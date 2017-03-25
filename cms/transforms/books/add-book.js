@@ -1,4 +1,4 @@
-export default function addBook(options, booksData) {
+module.exports = function addBook(options, booksData) {
 	const {
 		title,
 		authors,
@@ -15,8 +15,7 @@ export default function addBook(options, booksData) {
 		fetchAndSaveCover(options.coverUrl, coverFilename);
 	}
 
-	return {
-		...booksData,
+	return Object.assign({}, booksData, {
 		lastBookId: id,
 		list: [...booksData.list, {
 			id: String(id),
@@ -26,5 +25,5 @@ export default function addBook(options, booksData) {
 			tags,
 			coverFilename,
 		}],
-	};
-}
+	});
+};

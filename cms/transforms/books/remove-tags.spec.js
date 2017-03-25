@@ -1,4 +1,4 @@
-import removeTags from './remove-tags';
+const removeTags = require('./remove-tags');
 
 const sampleBooksData = {
 	list: [

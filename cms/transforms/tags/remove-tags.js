@@ -1,4 +1,4 @@
-export default function removeTags(tagsIds) {
+module.exports = function removeTags(tagsIds) {
 	return (tagsData) => {
 		const { ids, dictionary } = tagsData;
 		const { filteredIds, filteredDictionary } = ids.reduce((result, id) => {
@@ -15,10 +15,9 @@ export default function removeTags(tagsIds) {
 			filteredDictionary: {},
 		});
 
-		return {
-			...tagsData,
+		return Object.assign({}, tagsData, {
 			ids: filteredIds,
 			dictionary: filteredDictionary,
-		};
+		});
 	};
-}
+};

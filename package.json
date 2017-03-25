@@ -10,16 +10,15 @@
     "index.js",
     "data"
   ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint cms/",
     "precommit": "yarn lint && yarn test"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-es2015": "^6.22.0",
     "commander": "^2.9.0",
     "eslint": "^3.16.1",
     "eslint-config-airbnb": "^14.1.0",

@@ -6,7 +6,7 @@
  * @param {...Function} validators
  * @return {Function} combined validators
  */
-export default function combineValidators(...validators) {
+module.exports = function combineValidators(...validators) {
 	return (value) => {
 		let currentResult;
 
@@ -17,4 +17,4 @@ export default function combineValidators(...validators) {
 
 		return currentResult;
 	};
-}
+};

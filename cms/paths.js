@@ -1,6 +1,6 @@
-import path from 'path';
+const path = require('path');
 
-export default {
+module.exports = {
 	files: {
 		tags: path.resolve(__dirname, '../data/tags.json'),
 		books: path.resolve(__dirname, '../data/books.json'),

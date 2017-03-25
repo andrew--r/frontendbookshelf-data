@@ -1,4 +1,4 @@
-import pluralize from './pluralize';
+const pluralize = require('./pluralize');
 
 describe('pluralize', () => {
 	test('should return return plural or non-plural word variant depending on given count', () => {

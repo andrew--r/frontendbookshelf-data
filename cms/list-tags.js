@@ -1,7 +1,8 @@
-import program from 'commander';
+const program = require('commander');
 
-import PATHS from './PATHS';
-import readFile from './fs/read-file';
+const PATHS = require('./PATHS');
+const readFile = require('./fs/read-file');
+const objectValues = require('./helpers/object-values');
 
 program
 	.version('1.0.0')
@@ -11,6 +12,6 @@ program
 readFile(PATHS.files.tags)
 	.then(JSON.parse)
 	.then((parsedData) => {
-		console.log(Object.values(parsedData.dictionary).join('\n'));
+		console.log(objectValues(parsedData.dictionary).join('\n'));
 	})
 	.catch(console.log);

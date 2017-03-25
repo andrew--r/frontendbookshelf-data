@@ -1,4 +1,4 @@
-import removeBooks from './remove-books';
+const removeBooks = require('./remove-books');
 
 const sampleBooksData = {
 	list: [

@@ -1,4 +1,4 @@
-import isRequired from './is-required';
+const isRequired = require('./is-required');
 
 describe('is-required', () => {
 	test('should return error string if given value is empty or whitespace', () => {

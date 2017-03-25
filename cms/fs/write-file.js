@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs = require('fs');
 
 /**
  * Wrapper around fs.writeFile()
@@ -7,7 +7,7 @@ import fs from 'fs';
  * @param {String|Buffer} data
  * @return {Function} function that takes data and writes it to the given file
  */
-export default function writeFile(path) {
+module.exports = function writeFile(path) {
 	/**
 	 * @param  {String|Buffer} data
 	 * @return {Promise}
@@ -21,4 +21,4 @@ export default function writeFile(path) {
 			}
 		});
 	});
-}
+};

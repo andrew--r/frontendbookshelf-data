@@ -5,18 +5,16 @@
  * @param {Object} tagsData
  * @return {Object} updated tags data
  */
-export default function addTag(tags, tagsData) {
+module.exports = function addTag(tags, tagsData) {
 	return tags.reduce((result, tagName) => {
 		const id = result.lastTagId + 1;
 
-		return {
-			...result,
+		return Object.assign({}, result, {
 			lastTagId: id,
 			ids: [...result.ids, String(id)],
-			dictionary: {
-				...result.dictionary,
+			dictionary: Object.assign({}, result.dictionary, {
 				[id]: tagName,
-			},
-		};
+			}),
+		});
 	}, tagsData);
-}
+};
