@@ -16,9 +16,13 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint cms/",
-    "precommit": "yarn lint && yarn test"
+    "validate": "yarn validate:tags && yarn validate:books",
+    "validate:tags": "ajv -s data/tags.schema.json -d data/tags.json",
+    "validate:books": "ajv -s data/books.schema.json -d data/books.json",
+    "precommit": "yarn lint && yarn test && yarn validate"
   },
   "devDependencies": {
+    "ajv-cli": "^1.1.1",
     "commander": "^2.9.0",
     "eslint": "^3.16.1",
     "eslint-config-airbnb": "^14.1.0",
