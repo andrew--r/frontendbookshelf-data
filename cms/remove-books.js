@@ -3,6 +3,7 @@ import program from 'commander';
 import PATHS from './PATHS';
 import readFile from './fs/read-file';
 import writeFile from './fs/write-file';
+import unlink from './fs/unlink';
 import prettyJSONStringify from './helpers/pretty-json-stringify';
 
 import removeBooksFromBooksData from './transforms/books/remove-books';
@@ -22,6 +23,14 @@ if (!booksIds.length) {
 	console.log('Removing books from the books data...');
 	readFile(PATHS.files.books)
 		.then(JSON.parse)
+		.then((parsedData) => Promise
+			.all(
+				parsedData.list
+					.filter((book) => booksIds.includes(book.id))
+					.map((book) => unlink(`${PATHS.folders.covers}/${book.coverFilename}`)),
+			)
+			.then(() => parsedData),
+		)
 		.then(removeBooksFromBooksData(booksIds))
 		.then(prettyJSONStringify)
 		.then(writeFile(PATHS.files.books))
