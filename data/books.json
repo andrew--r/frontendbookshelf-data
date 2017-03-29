@@ -1,5 +1,5 @@
 {
-  "lastBookId": 18,
+  "lastBookId": 19,
   "list": [
     {
       "id": "0",
@@ -288,6 +288,20 @@
         "7"
       ],
       "coverFilename": "18.jpg"
+    },
+    {
+      "id": "19",
+      "title": "High Performance Browser Networking",
+      "authors": [
+        "Илья Григорик"
+      ],
+      "url": "https://hpbn.co",
+      "tags": [
+        "2",
+        "4",
+        "12"
+      ],
+      "coverFilename": "19.jpg"
     }
   ]
 }
