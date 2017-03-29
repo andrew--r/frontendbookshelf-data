@@ -76,5 +76,5 @@ Promise
 	}, booksData))
 	.then(prettyJSONStringify)
 	.then(writeFile(PATHS.files.books))
-	.then(() => console.log('Книга добавлена'))
+	.then(() => console.log('Successfully added new book'))
 	.catch(console.log);
