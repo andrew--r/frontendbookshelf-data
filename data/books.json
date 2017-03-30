@@ -1,5 +1,5 @@
 {
-  "lastBookId": 19,
+  "lastBookId": 20,
   "list": [
     {
       "id": "0",
@@ -302,6 +302,22 @@
         "12"
       ],
       "coverFilename": "19.jpg"
+    },
+    {
+      "id": "20",
+      "title": "WebGL. Программирование трёхмерной графики",
+      "authors": [
+        "Коичи Мацуда",
+        "Роджер Ли"
+      ],
+      "url": "https://www.ozon.ru/context/detail/id/31239396/",
+      "tags": [
+        "2",
+        "3",
+        "13",
+        "14"
+      ],
+      "coverFilename": "20.png"
     }
   ]
 }
