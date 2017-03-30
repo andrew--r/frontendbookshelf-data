@@ -11,7 +11,7 @@ const removeTagsFromBooksData = require('./transforms/books/remove-tags');
 program
 	.version('1.0.0')
 	.description('Removes given tags from the books and tags data')
-	.option('-n, --names [names]', 'tags names splitted by commas')
+	.option('-n, --names <names>', 'tags names splitted by commas')
 	.parse(process.argv);
 
 const trim = (string) => string.trim();

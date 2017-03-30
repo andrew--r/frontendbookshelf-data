@@ -11,8 +11,10 @@ const addTagsToTagsData = require('./transforms/tags/add-tags');
 
 program
 	.version('1.0.0')
-	.option('-n, --names="[names]"', 'tags names splitted by commas')
+	.option('-n, --names <names>', 'tags names splitted by commas')
 	.parse(process.argv);
+
+console.log('program.names', program.names);
 
 const trim = (string) => string.trim();
 const tags = (program.names || '').split(',').map(trim).filter(Boolean);
