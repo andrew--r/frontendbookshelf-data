@@ -14,8 +14,6 @@ program
 	.option('-n, --names <names>', 'tags names splitted by commas')
 	.parse(process.argv);
 
-console.log('program.names', program.names);
-
 const trim = (string) => string.trim();
 const tags = (program.names || '').split(',').map(trim).filter(Boolean);
 
