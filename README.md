@@ -28,12 +28,13 @@ for example:
 ```bash
 $ ./cms/list-tags.js --help
 
-  Usage: add-tags [options]
+  Usage: list-tags [options]
+
+  Lists existing tags
 
   Options:
 
-    -h, --help             output usage information
-    -V, --version          output the version number
-    -n, --names="[names]"  tags names splitted by commas
+    -h, --help     output usage information
+    -V, --version  output the version number
 
 ```
