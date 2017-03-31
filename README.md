@@ -8,20 +8,23 @@ $ yarn # install dependencies
 
 Here are a few handy CLI programs for managing data:
 
-* `./cms/list-books`
-* `./cms/list-tags`
-* `./cms/add-book`
-* `./cms/add-tags`
-* `./cms/remove-books`
-* `./cms/remove-tags`
+* `./cms/list-books.js`
+* `./cms/list-tags.js`
+* `./cms/add-book.js`
+* `./cms/add-tags.js`
+* `./cms/remove-books.js`
+* `./cms/remove-tags.js`
 
-This programs require installed Node.js >= 6.0.0.
+These programs require installed Node.js >= 6.0.0. They are executable, so you
+don't have to write `node ./cms/program-name.js`, just type
+`./cms/program-name.js` in your terminal. Note: if you use Windows, you
+*have to* specify `node` before a program path.
 
 To find out more about every program, run it with flag `-h` or `--help`,
 for example:
 
 ```bash
-$ ./cms/list-tags --help
+$ ./cms/list-tags.js --help
 
   Usage: add-tags [options]
 
@@ -31,11 +34,4 @@ $ ./cms/list-tags --help
     -V, --version          output the version number
     -n, --names="[names]"  tags names splitted by commas
 
-```
-
-If you use Windows, please run it explicitly with `node` and provide
-`.js` extension for every program:
-
-```bash
-$ node ./cms/list-tags.js --help
 ```
