@@ -19,7 +19,8 @@
     "validate": "yarn validate:tags && yarn validate:books",
     "validate:tags": "ajv -s data/tags.schema.json -d data/tags.json",
     "validate:books": "ajv -s data/books.schema.json -d data/books.json",
-    "precommit": "yarn lint && yarn test && yarn validate"
+    "qa": "yarn lint && yarn test && yarn validate && wait",
+    "precommit": "yarn qa"
   },
   "devDependencies": {
     "ajv-cli": "^1.1.1",
