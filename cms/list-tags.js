@@ -4,16 +4,17 @@ const program = require('commander');
 
 const PATHS = require('./paths');
 const readFile = require('./fs/read-file');
-const objectValues = require('./helpers/object-values');
 
 program
-	.version('1.0.0')
+	.version('1.1.0')
 	.description('Lists existing tags')
 	.parse(process.argv);
 
 readFile(PATHS.files.tags)
 	.then(JSON.parse)
 	.then((parsedData) => {
-		console.log(objectValues(parsedData.dictionary).join('\n'));
+		const { dictionary } = parsedData;
+
+		console.log(Object.keys(dictionary).map((id) => `#${id} ${dictionary[id]}`).join('\n'));
 	})
 	.catch(console.log);
