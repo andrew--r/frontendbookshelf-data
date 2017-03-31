@@ -9,6 +9,6 @@ charset = utf-8
 indent_style = tab
 indent_size = 4
 
-[*.{json,stylelintrc,eslintrc,babelrc}]
+[*.{json,stylelintrc,eslintrc,babelrc,yml}]
 indent_style = space
 indent_size = 2
