@@ -11,7 +11,7 @@ const removeBooksFromBooksData = require('./transforms/books/remove-books');
 program
 	.version('1.0.0')
 	.description('Removes given books = the books data')
-	.option('-i, --ids [ids]', 'books ids splitted by commas')
+	.option('-i, --ids <ids>', 'books ids splitted by commas')
 	.parse(process.argv);
 
 const trim = (string) => string.trim();
