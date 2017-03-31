@@ -1,5 +1,5 @@
 {
-  "lastBookId": 20,
+  "lastBookId": 21,
   "list": [
     {
       "id": "0",
@@ -318,6 +318,21 @@
         "14"
       ],
       "coverFilename": "20.png"
+    },
+    {
+      "id": "21",
+      "title": "React.js. Быстрый старт",
+      "authors": [
+        "Стоян Стефанов"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/139961087/",
+      "tags": [
+        "1",
+        "2",
+        "3",
+        "15"
+      ],
+      "coverFilename": "21.png"
     }
   ]
 }
