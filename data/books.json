@@ -1,5 +1,5 @@
 {
-  "lastBookId": 21,
+  "lastBookId": 22,
   "list": [
     {
       "id": "0",
@@ -334,6 +334,21 @@
         "15"
       ],
       "coverFilename": "21.png"
+    },
+    {
+      "id": "22",
+      "title": "SVG Animations",
+      "authors": [
+        "Сара Дрэснер"
+      ],
+      "url": "http://shop.oreilly.com/product/0636920045335.do",
+      "tags": [
+        "2",
+        "4",
+        "14",
+        "16"
+      ],
+      "coverFilename": "22.jpg"
     }
   ]
 }
