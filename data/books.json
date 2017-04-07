@@ -1,5 +1,5 @@
 {
-  "lastBookId": 22,
+  "lastBookId": 23,
   "list": [
     {
       "id": "0",
@@ -349,6 +349,21 @@
         "16"
       ],
       "coverFilename": "22.jpg"
+    },
+    {
+      "id": "23",
+      "title": "Designing Great Web APIs",
+      "authors": [
+        "Джеймс Хиггинботэм"
+      ],
+      "url": "https://conferences.oreilly.com/fluent/fl-ca/public/content/designing-great-web-apis?download=true",
+      "tags": [
+        "2",
+        "4",
+        "17",
+        "18"
+      ],
+      "coverFilename": "23.png"
     }
   ]
 }
