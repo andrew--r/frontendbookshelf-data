@@ -1,5 +1,5 @@
 {
-  "lastBookId": 31,
+  "lastBookId": 32,
   "list": [
     {
       "id": "0",
@@ -487,6 +487,20 @@
         "6"
       ],
       "coverFilename": "31.png"
+    },
+    {
+      "id": "32",
+      "title": "HTML5 для веб-дизайнеров",
+      "authors": [
+        "Джереми Кит"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/19431055/",
+      "tags": [
+        "0",
+        "3",
+        "5"
+      ],
+      "coverFilename": "32.jpg"
     }
   ]
 }
