@@ -1,5 +1,5 @@
 {
-  "lastBookId": 28,
+  "lastBookId": 29,
   "list": [
     {
       "id": "0",
@@ -442,6 +442,21 @@
         "19"
       ],
       "coverFilename": "28.jpg"
+    },
+    {
+      "id": "29",
+      "title": "CSS3 для веб-дизайнеров",
+      "authors": [
+        "Дэн Сидерхолм"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/19431033/",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "6"
+      ],
+      "coverFilename": "29.jpg"
     }
   ]
 }
