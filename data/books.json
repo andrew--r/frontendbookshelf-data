@@ -1,5 +1,5 @@
 {
-  "lastBookId": 26,
+  "lastBookId": 27,
   "list": [
     {
       "id": "0",
@@ -409,6 +409,22 @@
         "7"
       ],
       "coverFilename": "26.png"
+    },
+    {
+      "id": "27",
+      "title": "Пуленепробиваемый веб-дизайн",
+      "authors": [
+        "Дэн Седерхольм"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/10793233/",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "5",
+        "6"
+      ],
+      "coverFilename": "27.png"
     }
   ]
 }
