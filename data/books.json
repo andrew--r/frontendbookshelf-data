@@ -1,5 +1,5 @@
 {
-  "lastBookId": 29,
+  "lastBookId": 30,
   "list": [
     {
       "id": "0",
@@ -457,6 +457,21 @@
         "6"
       ],
       "coverFilename": "29.jpg"
+    },
+    {
+      "id": "30",
+      "title": "Transforms in CSS",
+      "authors": [
+        "Эрик Мейер"
+      ],
+      "url": "http://www.oreilly.com/free/transforms-in-css.csp",
+      "tags": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "coverFilename": "30.png"
     }
   ]
 }
