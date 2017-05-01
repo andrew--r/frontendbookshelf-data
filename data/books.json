@@ -1,5 +1,5 @@
 {
-  "lastBookId": 36,
+  "lastBookId": 37,
   "list": [
     {
       "id": "0",
@@ -560,6 +560,24 @@
         "6"
       ],
       "coverFilename": "36.png"
+    },
+    {
+      "id": "37",
+      "title": "Node.js in Action",
+      "authors": [
+        "Майк Кантелон",
+        "Марк Хартер",
+        "Натан Раджлич",
+        "Ти Джей Головайчук"
+      ],
+      "url": "https://www.amazon.com/Node-js-Action-Mike-Cantelon/dp/1617290572",
+      "tags": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "coverFilename": "37.png"
     }
   ]
 }
