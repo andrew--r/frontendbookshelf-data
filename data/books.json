@@ -1,5 +1,5 @@
 {
-  "lastBookId": 34,
+  "lastBookId": 35,
   "list": [
     {
       "id": "0",
@@ -530,6 +530,21 @@
         "7"
       ],
       "coverFilename": "34.png"
+    },
+    {
+      "id": "35",
+      "title": "Less. Путеводитель для новичков",
+      "authors": [
+        "Денис Малиночкин"
+      ],
+      "url": "https://www.gitbook.com/book/mrmlnc/less-guidebook-for-beginners/details",
+      "tags": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "coverFilename": "35.png"
     }
   ]
 }
