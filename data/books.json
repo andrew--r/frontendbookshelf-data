@@ -1,5 +1,5 @@
 {
-  "lastBookId": 27,
+  "lastBookId": 28,
   "list": [
     {
       "id": "0",
@@ -426,6 +426,22 @@
         "19"
       ],
       "coverFilename": "27.png"
+    },
+    {
+      "id": "28",
+      "title": "Сначала мобильные!",
+      "authors": [
+        "Люк Вроблевски"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/15708347/",
+      "tags": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "19"
+      ],
+      "coverFilename": "28.jpg"
     }
   ]
 }
