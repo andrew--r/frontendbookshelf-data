@@ -1,6 +1,6 @@
 {
   "name": "frontendbookshelf-data",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Data & CMS for frontendbookshelf",
   "main": "index.js",
   "repository": "https://github.com/andrew--r/frontendbookshelf-data",
