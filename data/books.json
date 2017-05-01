@@ -1,5 +1,5 @@
 {
-  "lastBookId": 30,
+  "lastBookId": 31,
   "list": [
     {
       "id": "0",
@@ -472,6 +472,21 @@
         "6"
       ],
       "coverFilename": "30.png"
+    },
+    {
+      "id": "31",
+      "title": "Секреты CSS",
+      "authors": [
+        "Лиа Веру"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/137213400/",
+      "tags": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "coverFilename": "31.png"
     }
   ]
 }
