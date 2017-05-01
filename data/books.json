@@ -1,5 +1,5 @@
 {
-  "lastBookId": 37,
+  "lastBookId": 38,
   "list": [
     {
       "id": "0",
@@ -578,6 +578,22 @@
         "8"
       ],
       "coverFilename": "37.png"
+    },
+    {
+      "id": "38",
+      "title": "JavaScript для профессиональных веб-разработчиков",
+      "authors": [
+        "Николас Закас"
+      ],
+      "url": "https://www.ozon.ru/context/detail/id/31257038/",
+      "tags": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "7"
+      ],
+      "coverFilename": "38.png"
     }
   ]
 }
