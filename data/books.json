@@ -1,5 +1,5 @@
 {
-  "lastBookId": 23,
+  "lastBookId": 24,
   "list": [
     {
       "id": "0",
@@ -364,6 +364,22 @@
         "18"
       ],
       "coverFilename": "23.png"
+    },
+    {
+      "id": "24",
+      "title": "JavaScript. Карманный справочник",
+      "authors": [
+        "Дэвид Флэнаган"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/31100361/",
+      "tags": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "7"
+      ],
+      "coverFilename": "24.png"
     }
   ]
 }
