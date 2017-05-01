@@ -1,5 +1,5 @@
 {
-  "lastBookId": 38,
+  "lastBookId": 39,
   "list": [
     {
       "id": "0",
@@ -594,6 +594,21 @@
         "7"
       ],
       "coverFilename": "38.png"
+    },
+    {
+      "id": "39",
+      "title": "Maintainable JavaScript",
+      "authors": [
+        "Николас Закас"
+      ],
+      "url": "https://www.amazon.com/gp/product/1449327680/",
+      "tags": [
+        "1",
+        "2",
+        "4",
+        "7"
+      ],
+      "coverFilename": "39.png"
     }
   ]
 }
