@@ -1,5 +1,5 @@
 {
-  "lastBookId": 33,
+  "lastBookId": 34,
   "list": [
     {
       "id": "0",
@@ -516,6 +516,20 @@
         "6"
       ],
       "coverFilename": "33.png"
+    },
+    {
+      "id": "34",
+      "title": "Build Your Own AngularJS",
+      "authors": [
+        "Теро Парвиайнен"
+      ],
+      "url": "https://teropa.info/build-your-own-angular/",
+      "tags": [
+        "2",
+        "4",
+        "7"
+      ],
+      "coverFilename": "34.png"
     }
   ]
 }
