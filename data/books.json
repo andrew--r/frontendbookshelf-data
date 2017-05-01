@@ -1,5 +1,5 @@
 {
-  "lastBookId": 35,
+  "lastBookId": 36,
   "list": [
     {
       "id": "0",
@@ -545,6 +545,21 @@
         "6"
       ],
       "coverFilename": "35.png"
+    },
+    {
+      "id": "36",
+      "title": "CSS. Каскадные таблицы стилей",
+      "authors": [
+        "Эрик Мейер"
+      ],
+      "url": "http://www.ozon.ru/context/detail/id/3881079/",
+      "tags": [
+        "0",
+        "1",
+        "3",
+        "6"
+      ],
+      "coverFilename": "36.png"
     }
   ]
 }
