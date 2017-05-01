@@ -1,5 +1,5 @@
 {
-  "lastBookId": 25,
+  "lastBookId": 26,
   "list": [
     {
       "id": "0",
@@ -394,6 +394,21 @@
         "7"
       ],
       "coverFilename": "25.png"
+    },
+    {
+      "id": "26",
+      "title": "Understanding ECMAScript 6",
+      "authors": [
+        "Николас Закас"
+      ],
+      "url": "https://leanpub.com/understandinges6",
+      "tags": [
+        "1",
+        "2",
+        "4",
+        "7"
+      ],
+      "coverFilename": "26.png"
     }
   ]
 }
